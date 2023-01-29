@@ -167,6 +167,7 @@ public class Messages extends NLS
     public static String LabelTradeCalendarDefault;
     public static String LabelTradeCalendarEuronext;
     public static String LabelTradeCalendarGermany;
+    public static String LabelTradeCalendarIBOV;
     public static String LabelTradeCalendarISE;
     public static String LabelTradeCalendarLSE;
     public static String LabelTradeCalendarMICEXRTS;
@@ -278,7 +279,6 @@ public class Messages extends NLS
     public static String MsgMoreResultsAvailable;
     public static String MsgNegativeHoldingsDuringFIFOCostCalculation;
     public static String MsgNoExchangeRateAvailableForConversion;
-    public static String MsgNoExchangeRateAvailableForConversionTaxFee;
     public static String MsgNoExchangeRatesAvailableForCustomSeries;
     public static String MsgNoExchangeRateTimeSeriesFound;
     public static String MsgNoQuotesFoundInHTML;

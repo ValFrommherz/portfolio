@@ -34,7 +34,7 @@ public class DonutChartBuilder
         ICircularSeries<?> circularSeries = (ICircularSeries<?>) chart.getSeriesSet().createSeries(SeriesType.DOUGHNUT,
                         model.getTaxonomy().getName());
 
-        circularSeries.setBorderColor(Colors.WHITE);
+        circularSeries.setSliceColor(Colors.WHITE);
 
         Node rootNode = circularSeries.getRootNode();
         rootNode.setData(model.getChartRenderingRootNode());
@@ -117,7 +117,7 @@ public class DonutChartBuilder
                                     Assignment mergedAssignment = new Assignment(r.getBackingInvestmentVehicle(),
                                                     r.getAssignment().getWeight() + r.getAssignment().getWeight());
 
-                                    TaxonomyNode mergedNode = new AssignmentNode(null, mergedAssignment);
+                                    TaxonomyNode mergedNode = new AssignmentNode(child, mergedAssignment);
                                     mergedNode.setActual(r.getActual().add(l.getActual()));
 
                                     return mergedNode;
